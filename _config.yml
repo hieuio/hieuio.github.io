@@ -1,8 +1,8 @@
 # ----------- CONFIGURABLE START -----------
-title:            "LiberXue|FullStack|独立开发者|jekyll blog|GitHub blog"
-description:      "Full Stack独立开发者|欢迎来到 LiberXue「角落」侃侃理想、谈谈人生、敲敲代码。"
-url:              https://liberxue.github.io # 域名
-signoff:          "LiberXue" # Your name
+title:            "Hiếu.IO blog"
+description:      "Bát nhã tâm kinh。"
+url:              https://hieuio.github.io # 
+signoff:          "HieuIO" # Your name
 facebook_appid:   #liberxue
 google_analytics: UA-101222464-1
 share:            true 
@@ -11,22 +11,22 @@ paginate: 15
 paginate_path: "liberxuepage:num"
 gems: [jekyll-paginate]
 links:
-  - name:         首页
+  - name:         Nhà
     url:          /
     external:     false
-  - name:         书籍
+  - name:         Sống
     url:          /book
     external:     false
-  - name:         旅游
+  - name:         Sách
     url:          /road
     external:     false
-  - name:         归档
+  - name:         Việc
     url:          /archives
     external:     false
-  - name:         标签
+  - name:         Vui
     url:          /tags
     external:     false
-  - name:         关于
+  - name:         Yêu
     url:          /about
     external:     false
 # ------------ CONFIGURABLE END ------------
