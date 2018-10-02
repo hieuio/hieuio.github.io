@@ -11,23 +11,20 @@ paginate: 15
 paginate_path: "liberxuepage:num"
 gems: [jekyll-paginate]
 links:
-  - name:         Nhà
-    url:          /
-    external:     false
   - name:         Sống
-    url:          /book
+    url:          /song
     external:     false
   - name:         Sách
-    url:          /road
+    url:          /sach
     external:     false
   - name:         Việc
-    url:          /archives
+    url:          /viec
     external:     false
   - name:         Vui
-    url:          /tags
+    url:          /vui
     external:     false
   - name:         Yêu
-    url:          /about
+    url:          /yeu
     external:     false
 # ------------ CONFIGURABLE END ------------
 
