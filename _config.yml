@@ -20,12 +20,7 @@ links:
   - name:         Việc
     url:          /viec
     external:     false
-  - name:         Vui
-    url:          /vui
-    external:     false
-  - name:         Yêu
-    url:          /yeu
-    external:     false
+
 # ------------ CONFIGURABLE END ------------
 
 #permalink:        /:categories/:title.html
