@@ -1075,7 +1075,7 @@ textarea:-ms-input-placeholder {
   position: absolute;
   top: 0;
   left: -15px;
-  content: "#";
+  content: "→ " ;
   color: #eb5055;
 }
 .post-content pre {
