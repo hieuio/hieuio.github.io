@@ -1,7 +1,7 @@
 # ----------- CONFIGURABLE START -----------
 title:            "Hiếu.IO blog"
 description:      "Bát nhã tâm kinh。"
-url:              https://hieuio.github.io # 
+#url:              https://hieuio.github.io # 
 signoff:          "HieuIO" # Your name
 facebook_appid:   #liberxue
 google_analytics: UA-101222464-1
