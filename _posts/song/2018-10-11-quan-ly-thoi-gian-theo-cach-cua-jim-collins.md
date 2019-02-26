@@ -9,7 +9,7 @@ tags:
 -  kinh nghiệm
 -  quản lý thời gian
 ---
-![Jim Collins](/media/images/quan-ly-thoi-gian-theo-kieu-cua-jim-colins.jpeg  "jJim Collins")
+
 
 Nói đến Jim Collins là nói đến sự rèn luyện tính kỷ luật. Tác giả của Good to Great (Từ tốt đến vĩ đại) và Built to Last(Xây dựng để trường tồn) không chỉ hiểu sâu sắc sự bền bỉ trong các công ty và các nhà lãnh đạo hoạt động tốt nhất mà còn nổi tiếng về tính kỷ luật và năng suất công việc cao. Ông còn là vận động viên chạy, một nhà leo núi - minh chứng của sự khỏe mạnh, dẻo dai.
 

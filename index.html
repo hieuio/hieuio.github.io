@@ -1,34 +1,65 @@
 ---
 ---
 
-<div class="main-content index-page clearfix ">
-	<div class="post-lists">
-		<div class="post-lists-body">
+<div class="equal-height columns main-columns">
+  <div class="first cell width-9">
+    <div class="blog-posts">
       {% for posts in paginator.posts %}
-		<div class="post-list-item">
-				<div class="post-list-item-container">
-					 <div class="item-thumb  bg-{{posts.background }}" style="background-image:url('{{posts.background-image }}');"></div>
-          	<a href="{{ posts.url }}">
-	             <div class="item-desc">
-		<p>{{ posts.content | strip_html | strip_newlines | truncate: 100 }}</p>
-						</div>
-					</a>
-					<div class="item-slant reverse-slant  bg-{{ posts.background }}"></div>
-					<div class="item-slant">	<div class="liberxue-title">
-						{{ posts.category }}
-				</div></div>
-					<div class="item-label">
-						<div class="item-title"><a href="{{ posts.url }}" title="访问 {{ posts.title }}">{{ posts.title }}</a></div>
-						<div class="item-meta clearfix">
-						<div class="item-meta-ico bg-ico-book" style="background: url('style/images/bg-ico.png') no-repeat;background-size: 40px auto;"></div>
-             <div class="item-meta-cat">
-				 <a href="/tags#{{ posts.category }}" title="访问 {{ posts.category }}" data-hover="{{ posts.category }}">{{ posts.category }}</a>
-				 <a href="/archives#{{ posts.date | date: "%Y"}}" title="访问 {{ posts.date | date: "%Y"}}" data-hover="{{ posts.date | date: "%F %H:%M"}}">{{ posts.date | date: "%F %H:%M"}}</a></div>
-						</div>
-					</div>
-				</div>
-      </div>
-       {% endfor %}
-	</div>
-	</div>
-  {% include pagination.html %}
+      <a
+        href="{{ posts.url }}"
+        style=""
+        rel="bookmark"
+        id="post-38838"
+        class="post post-38838 type-post status-publish format-standard has-post-thumbnail sticky hentry category-developers tag-blog tag-update tag-xamarin ui-link"
+      >
+        <div class="balanced columns">
+          <div class="cell width-8 width-12-on-small-desktop">
+            <h1>{{ posts.title }}</h1>
+            <div class="meta">
+              <img src="assets/themes/images/author.png" width="116"
+              height="116" alt="{{ posts.category }}" class="avatar avatar-116
+              wp-user-avatar wp-user-avatar-116 alignnone photo">
+              <div>
+                <div>Hiếu Nguyễn</div>
+                <div>
+                  <span>{{ posts.date | date: "%F %H:%M" }}</span>
+                  <span class="hide-on-mobile tag-list">{{
+                    posts.category
+                  }}</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="entry-summary hide-on-mobile">
+              <p>
+                {{
+                  posts.content | strip_html | strip_newlines | truncate: 170
+                }}
+                […]
+              </p>
+            </div>
+
+            <div class="continue-reading hide-on-mobile">
+              <span class="label">Đọc tiếp</span>
+            </div>
+          </div>
+
+          <div class="width-4 cell thumbnail">
+            <img
+              width="2122"
+              height="1598"
+              src="{{ posts.background-image }}"
+              class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+              alt=""
+            />
+          </div>
+        </div>
+      </a>
+
+	  {% endfor %}
+	  	{% include pagination.html %}
+      
+    </div>
+  </div>
+  {% include tags.html %}
+</div>

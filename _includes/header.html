@@ -1,0 +1,33 @@
+<div id="top-container">
+  <div id="global-header">
+    <div class="global-bar">
+      <div class="wrapper">
+        <!--
+        <h1 class="xamarin logo">
+          <a href="/" title="{{ site.title }}" class="navbar-logo">
+            Hieu's Blog
+          </a>
+        </h1> -->
+        <div class="navigation">
+          <a class="label">
+            <span class="menu">Menu</span>
+            <span class="close icon"></span>
+          </a>
+          <ul>
+            {% for link in site.links %}
+            <li>
+              <a
+                href="{{ link.url }}"
+                title=" {{ link.name }}"
+                data-hover="{{ link.name }}"
+                >{{ link.name }}</a
+              >
+            </li>
+
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,34 +3,68 @@ title: Sống
 description: "Sống hạnh phúc"
 ---
 
-<div class="main-content index-page clearfix ">
-	<div class="post-lists">
-		<div class="post-lists-body">
-	  {% for posts in site.posts %}
-	  	   {% if posts.life%}
-		<div class="post-list-item">
-				<div class="post-list-item-container">
-					 <div class="item-thumb  bg-{{posts.background }}" style="background-image:url('{{posts.background-image }}');"></div>
-          	<a href="{{ posts.url }}">
-	             <div class="item-desc">
-		<p>{{ posts.content | strip_html | strip_newlines | truncate: 100 }}</p>
-						</div>
-					</a>
-					<div class="item-slant reverse-slant  bg-{{ posts.background }}"></div>
-					<div class="item-slant"></div>
-					<div class="item-label">
-						<div class="item-title"><a href="{{ posts.url }}">{{ posts.title }}</a></div>
-						<div class="item-meta clearfix">
-						<div class="item-meta-ico bg-ico-book" style="background: url('../style/images/bg-ico.png') no-repeat;background-size: 40px auto;"></div>
-             <div class="item-meta-cat">
-				 <a href="category/thoughts/index.html">{{ posts.category }}</a>
-				 <a href="category/thoughts/index.html">{{ posts.date | date: "%F %H:%M:%S "}}</a></div>
-						</div>
+
+<div class="equal-height columns main-columns">
+		<div class="first cell width-9">
+		  <div class="blog-posts">
+			{% for posts in site.posts %} {% if posts.life%}
+			<a
+			  href="{{ posts.url }}"
+			  style=""
+			  rel="bookmark"
+			  id="post-38838"
+			  class="post post-38838 type-post status-publish format-standard has-post-thumbnail sticky hentry category-developers tag-blog tag-update tag-xamarin ui-link"
+			>
+			  <div class="balanced columns">
+				<div class="cell width-8 width-12-on-small-desktop">
+				  <h1>{{ posts.title }}</h1>
+				  <div class="meta">
+					<img
+					  src="/assets/themes/images/author.png"
+					  width="116"
+					  height="116"
+					  alt="{{ posts.category }}"
+					  class="avatar avatar-116
+						  wp-user-avatar wp-user-avatar-116 alignnone photo"
+					/>
+					<div>
+					  <div>Hiếu Nguyễn</div>
+					  <div>
+						<span>{{ posts.date | date: "%F %H:%M" }}</span>
+						<span class="hide-on-mobile tag-list">{{
+						  posts.category
+						}}</span>
+					  </div>
 					</div>
+				  </div>
+	  
+				  <div class="entry-summary hide-on-mobile">
+					<p>
+					  {{
+						posts.content | strip_html | strip_newlines | truncate: 170
+					  }}
+					  […]
+					</p>
+				  </div>
+	  
+				  <div class="continue-reading hide-on-mobile">
+					<span class="label">Đọc tiếp</span>
+				  </div>
 				</div>
+	  
+				<div class="width-4 cell thumbnail">
+				  <img
+					width="2122"
+					height="1598"
+					src="{{posts.background-image}}"
+					class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+					alt=""
+				  />
+				</div>
+			  </div>
+			</a>
+			{% endif %} {% endfor %} {% include pagination.html %}
+		  </div>
+		</div>
 	  </div>
-			 {% endif %}
-       {% endfor %}
-	</div>
-	</div>
-  {% include pagination.html %}
+	  

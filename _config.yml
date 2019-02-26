@@ -9,7 +9,9 @@ share:            true
 # 分页
 paginate: 15
 paginate_path: "liberxuepage:num"
-gems: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
+  - jekyll-admin
 links:
   - name:         Sống
     url:          /song
@@ -20,7 +22,6 @@ links:
   - name:         Việc
     url:          /viec
     external:     false
-
 # ------------ CONFIGURABLE END ------------
 
 #permalink:        /:categories/:title.html
@@ -28,3 +29,8 @@ permalink: /:year/:month/:day/:title.html
 defaults:
   - values:
       layout: "default"
+jekyll_admin:
+  hidden_links:
+    - staticfiles
+    - datafiles
+    - configuration
