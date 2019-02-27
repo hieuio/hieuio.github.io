@@ -9,22 +9,12 @@
           </a>
         </h1> -->
         <div class="navigation">
-          <a class="label">
+          <a class="label ui-link">
             <span class="menu">Menu</span>
             <span class="close icon"></span>
           </a>
-          <ul>
-            {% for link in site.links %}
-            <li>
-              <a
-                href="{{ link.url }}"
-                title=" {{ link.name }}"
-                data-hover="{{ link.name }}"
-                >{{ link.name }}</a
-              >
-            </li>
-
-            {% endfor %}
+          {% assign menu = site.menus.header %}
+        {% include menus.html %}
           </ul>
         </div>
       </div>
