@@ -13,8 +13,8 @@
             <span class="menu">Menu</span>
             <span class="close icon"></span>
           </a>
-          {% assign menu = site.menus.header %}
-        {% include menus.html %}
+          {% assign menu = site.data.menus.items %}
+          {% include menus.html %}
           </ul>
         </div>
       </div>

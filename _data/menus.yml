@@ -1,8 +1,37 @@
----
-title: Homepage
-menus:
-  header:
-    title: Home
-    weight: 1
-    
----
+ items:
+  - title: Life 
+    url: /song
+  - title: Books
+    url: /sach
+  - title: Microsoft Azure
+    children:
+      - title: Hybrid Cloud
+        url: /piece1.html
+      - title: Infrastructure
+        url: /piece2.html
+      - title: Open Source
+        url: /piece3.html
+  - title: Web
+    children:
+      - title: Widget 1
+        url: /widget1.html
+      - title: Widget 2
+        url: /widget2.html
+      - title: Widget 3
+        url: /widget3.html
+  - title: Mobile 
+    children:
+      - title: Widget 1
+        url: /widget1.html
+      - title: Widget 2
+        url: /widget2.html
+      - title: Widget 3
+        url: /widget3.html
+  - title: Devops 
+    children:
+      - title: Widget 1
+        url: /widget1.html
+      - title: Widget 2
+        url: /widget2.html
+      - title: Widget 3
+        url: /widget3.html

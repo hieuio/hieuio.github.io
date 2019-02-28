@@ -1,7 +1,9 @@
 <ul>
-    {% for item in site.menus.header %}
+
+    {% for item in site.data.menus.items %}
         {% if item.children %}
         <li class="dropdown " data-hover="dropdown">
+            <a href="{{ item.url }}"  data-toggle title="{{item.title}}">{{item.title}}</a>
                 <ul role="menu">
                         {% for item in item.children %}
                           <li>
@@ -11,9 +13,10 @@
                 </ul>
         {% else %}
         <li>
+        <a href="{{ item.url }}" title="{{item.title}}">{{item.title}}</a>
         {% endif %}
       
-        <a href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+      
       
       </li>
     {% endfor %}
